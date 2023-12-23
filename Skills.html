@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
+    <link rel="icon" type="image/x-icon" href="myphoto-modified.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
@@ -15,105 +16,270 @@
             background-image: linear-gradient(990deg,rgb(94, 93, 93),rgb(11, 11, 11));
         }
     </style>
+    <style>
+        .hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color:white;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+    .hover-animation-navbar
+{
+  display: inline-block;
+  position: relative;
+  color:rgb(255, 255, 255);
+}
+.hover-animation-navbar::after
+{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:rgb(255, 255, 255);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-animation-navbar:hover::after
+{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.hi {
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+    </style>
+    <style>
+        
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(12) {
+  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(13) {
+  animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(14) {
+  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(15) {
+  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(16) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(17) {
+  animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(18) {
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+    </style>
 </head>
 <body class="container text-light" id="bgchange">
     <div>
         <nav class="navbar navbar-dark navbar-expand-lg" style="background-color:rgba(18, 17, 17, 0.146);">
             <div class="container">
-              <a class="navbar-brand" href="./index.html"><i class="bi bi-house-door"></i></a>
+              <a class="hover-animation-navbar navbar-brand" href="./index.html"><i class="bi bi-house-door"></i></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./About.html"><b>ABOUT</b></a>
+                    <a class="hover-animation-navbar nav-link" aria-current="page" href="./About.html"><b>ABOUT</b></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./Skills.html"><b>SKILLS</b></a>
+                    <a class="hover-animation-navbar nav-link" href="./Skills.html"><b>SKILLS</b></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./Contact.html" tabindex="-1" aria-disabled="true"><i class="bi bi-telephone"></i><b>CONTACT</b></a>
+                    <a class="hover-animation-navbar nav-link" href="./Contact.html" tabindex="-1" aria-disabled="true"><i class="bi bi-telephone"></i><b>CONTACT</b></a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
     </div>            
-<div class="row justify-content-between">    
-    <div class="text-start col-3">
-        <h1 class="fst-bold mt-3">
-            SKILLS
-        </h1>
-    </div> 
-     <div class="col-5 mt-3">
-        <button class="btn btn-outline-dark text-light">Certificate <i class="bi bi-box-arrow-up-right"></i></button>
-     </div>
-</div>    
-     <div class="text-start">   
-        <p class="text-muted">
-           <u>EXPRETISE</u>:
-        </p>
-    </div> 
-    
-    <div class="text-start">
-        <ul>
-            <li>
-                <u>PROGRAMMING LANGUAGE</u>:
-                <p class="ms-5 mt-2"><i class="bi bi-caret-right-fill"></i>
-                    CORE JAVA
+<div class="hi">
+    <div class="row justify-content-between">    
+        <div class="text-start col-3">
+            <h1 class="fst-bold mt-3">
+              <span>  SKILLS</span>
+            </h1>
+        </div> 
+         <div class="col-5 mt-3">
+           <span>
+            <button class="btn btn-outline-dark text-light"><span>Certificate</span> <i class="bi bi-box-arrow-up-right"></i></button>
+           </span>
+         </div>
+    </div>    
+         <div class="text-start">   
+            <p class="text-muted">
+               <span><u>EXPRETISE</u>:</span>
+            </p>
+        </div> 
+        
+        <div class="text-start">
+            <ul>
+                <li>
+                    <span><u>PROGRAMMING LANGUAGE</u>:</span>
+                    <br>
+                    <span><p class="ms-5 mt-2"><i class="bi bi-caret-right-fill"></i>
+                        CORE JAVA
+                    </p></span>
+                </li>
+                    <li>
+                        <span><u>WEB TECHNOLOGIES</u>:</span>
+                    </li>
+                    <span>
+                        <p class="ms-5 mt-2">
+                            <i class="bi bi-caret-right-fill"></i> HTML <br>
+                            <i class="bi bi-caret-right-fill"></i> CSS <br>
+                            <i class="bi bi-caret-right-fill"></i>BOOTSTRAP
+                        </p>
+                    </span>
+                    <li>
+                        <span>
+                            <u>FRONTEND</u>:
+                        </span>
+                    </li>
+                    <span>
+                        <P class="ms-5 mt-2">
+                            <i class="bi bi-caret-right-fill"></i> React JS
+                        </P>
+                    </span>
+                    <li>
+                        <span><u>BACKEND</u>:</span>
+                    </li>
+                    <span>
+                        <p class="ms-5 mt-2">
+                            <i class="bi bi-caret-right-fill"></i>SPRING BOOT
+                        </p>
+                    </span>
+                <li>
+                    <span><u>DATABASE</u>:</span>
+                </li>
+               <span>
+                <p class="ms-5 mt-2">
+                    <i class="bi bi-caret-right-fill"></i>MYSQL <br>
+                    <i class="bi bi-caret-right-fill"></i>ORACLE 11g
                 </p>
-            </li>
-            <li>
-                <u>WEB TECHNOLOGIES</u>:
-            </li>
-            <p class="ms-5 mt-2">
-                <i class="bi bi-caret-right-fill"></i> HTML <br>
-                <i class="bi bi-caret-right-fill"></i> CSS <br>
-                <i class="bi bi-caret-right-fill"></i>BOOTSTRAP
-            </p>
-            <li>
-                <u>FRONTEND</u>:
-            </li>
-            <P class="ms-5 mt-2">
-                <i class="bi bi-caret-right-fill"></i> React JS
-            </P>
-            <li>
-                <u>BACKEND</u>:
-            </li>
-            <p class="ms-5 mt-2">
-                <i class="bi bi-caret-right-fill"></i>SPRING BOOT
-            </p>
-            <li>
-                <u>DATABASE</u>:
-            </li>
-            <p class="ms-5 mt-2">
-                <i class="bi bi-caret-right-fill"></i>MYSQL <br>
-                <i class="bi bi-caret-right-fill"></i>ORACLE 11g
-            </p>
-            <li>
-                <u>ORM</u>:
-            </li>
-            <P class="ms-5 mt-2">
-                <i class="bi bi-caret-right-fill"></i>Hibernate
-            </P>
-            <li>
-                <u>SCM</u>:
-            </li>
-            <p class="ms-5 mt-2">
-                <i class="bi bi-caret-right-fill"></i>GIT
-            </p>
-            <li>
-                <u>TESTING</u>:
-            </li>
-            <p class="ms-5 mt-2">
-                <i class="bi bi-caret-right-fill"></i>Jenkins <br>
-                <i class="bi bi-caret-right-fill"></i>Mockito <br>
-                <i class="bi bi-caret-right-fill"></i>Junit
-            </p>
-        </ul>
-    </div>
- </div>    
+               </span>
+                    <li>
+                        <span><u>ORM</u>:</span>
+                    </li>
+                    <span>
+                        <P class="ms-5 mt-2">
+                            <i class="bi bi-caret-right-fill"></i>Hibernate
+                        </P>
+                    </span>
+                    <li>
+                       <span> <u>SCM</u>:</span>
+                    </li>
+                    <span>
+                        <p class="ms-5 mt-2">
+                            <i class="bi bi-caret-right-fill"></i>GIT
+                        </p>
+                    </span>
+                    <li>
+                       <span> <u>TESTING</u>:</span>
+                    </li>
+                    <span>
+                        <p class="ms-5 mt-2">
+                            <i class="bi bi-caret-right-fill"></i>Jenkins <br>
+                            <i class="bi bi-caret-right-fill"></i>Mockito <br>
+                            <i class="bi bi-caret-right-fill"></i>Junit
+                        </p>
+                    </span>
+            </ul>
+        </div>
+     </div>    
+</div>
         <hr>
     <div class=" container row justify-content-evenly">
         <div class="text-center col-lg-10 col-md-8 col-sm-6">
