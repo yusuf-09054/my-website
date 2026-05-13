@@ -20,4 +20,8 @@ emailjs.send(serviceID,templateID,params1)
         alert("your message is sent successfully");
     })
     .catch((err) => console.log(err));
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 42760e4013456e29175187c90862102740ff6edf
